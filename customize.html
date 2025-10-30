@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="navdiv">
+        <div class="home">
+            <a href="./index.html"><img class="logo" src="./images/Ridoy.png" alt="My profile picture">Stop Watch</a>
+        </div>
+        <ul>
+            <li><a href="./customize.html">Customize</a></li>
+            <li><a href="./contact_me.html">Contact me</a></li>
+        </ul>
+    </div>
+    </nav>
+    <h1 class="first-element">Lets try customizing the stop watch</h1>
+    <div class="box">
+        <p class="question">Your current intervel is <span id="timerIntervel"></span></p>
+        <p class="question">Do you want to change the intervel?</p>
+        <div class="input-div">
+            <input type="text" id="T-intervel" class="input-box" placeholder="Enter Desired Intervel">
+            <button onclick="submitIntervel()" class="submit-button">Submit</button>
+        </div>
+        <p class="question">Your current increment is <span id="timerIncrement"></span></p>
+        <p class="question">Do you want to change the increment?</p>
+        <div class="input-div">
+            <input type="text" id="T-increment" class="input-box" placeholder="Enter Desired Increment">
+            <button onclick="submitIncrement()" class="submit-button">Submit</button>
+        </div>
+
+    </div>
+
+    <div class="box">
+        <p>Your Timer Starts </p>
+        <div class="stop-watch-box">
+            <p id="stop-watch-timer"></p>
+        </div>
+        <button id="startButton" onclick="start()" class="my-button" style="background-color: rgb(97, 97, 72);">Start</button>
+        <button onclick="stop()" class="my-button" style="background-color: rgba(0, 140, 255, 0.319);">Stop</button>
+        <button onclick="reset()" class="my-button" style="background-color: rgb(71, 54, 54);">Reset</button>
+        
+        
+    </div>
+        <footer class="footer">
+        <p>&copy;2025, MD. ADIB ASRAR RIDOY. All rights reserved.</p>
+        <p>Last Modified: <span id="ModifiedTime"></span></p>
+        <script src="script.js"></script>
+    </footer>
+</body>
+</html>
