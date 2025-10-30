@@ -1,0 +1,125 @@
+body{
+    background-color: #84994F;
+}
+*{
+    text-decoration: none;
+}
+h1{
+    font-family: "Libre Baskerville";
+;
+}
+.navbar{
+    background-color: #FFE797;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.home{
+    margin-bottom: 10px;
+}
+.home a{
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 500;
+    color: #A72703;
+
+}
+.logo{
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.navdiv li{
+    list-style: none;
+    display: inline;
+    margin: 10px;
+    font-size: 2.5rem;
+}
+.navdiv li a{
+    color: #A72703;
+    font-style: oblique;
+}
+
+.first-element{
+    margin-top: 150px;
+    text-align: center;
+    color: #531201;
+}
+
+.box{
+    margin-top: 50px;
+    background-color: #a7b753;
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 20px;
+}
+.stop-watch-pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-button{
+    /* display: inline-block; */
+    border: ridge;
+    border-radius: 8px;
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    cursor: pointer; 
+    color: white; 
+    font-size: 1.5rem;
+    
+}
+
+.my-button:hover{
+    color: #531201;
+}
+.stop-watch-box{
+    background-color: white;
+    height: 100px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    border-radius: 40px;
+    text-align: center;
+    color: black;
+    padding: 1px;
+}
+
+
+.profile_div{
+    width: 80%;
+    margin-top: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 50px;
+    float: right;
+    font-size: larger;
+}
+.profile_pic{
+    height: 300px;
+    float: left;
+    margin-top: -5%;
+    border-radius: 40%;
+    padding: 30px;
+}
+
+.footer{
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+    
+}
