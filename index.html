@@ -10,9 +10,10 @@
     <nav class="navbar">
     <div class="navdiv">
         <div class="home">
-            <a href="./index.html"><img class="logo" src="./images/Ridoy.png" alt="My profile picture">Custom Stop Watch</a>
+            <a href="./index.html"><img class="logo" src="./images/Ridoy.png" alt="My profile picture">Stop Watch</a>
         </div>
         <ul>
+            <li><a href="./customize.html">Customize</a></li>
             <li><a href="./contact_me.html">Contact me</a></li>
         </ul>
     </div>
@@ -24,9 +25,9 @@
         <div class="stop-watch-box">
             <p id="stop-watch-timer"></p>
         </div>
-        <button onclick="startButton()" class="my-button" style="background-color: rgb(97, 97, 72);">Start</button>
-        <button onclick="stopButton()" class="my-button" style="background-color: rgba(0, 140, 255, 0.319);">Stop</button>
-        <button onclick="resetButton()" class="my-button" style="background-color: rgb(71, 54, 54);">Reset</button>
+        <button id="startButton" onclick="start()" class="my-button" style="background-color: rgb(97, 97, 72);">Start</button>
+        <button onclick="stop()" class="my-button" style="background-color: rgba(0, 140, 255, 0.319);">Stop</button>
+        <button onclick="reset()" class="my-button" style="background-color: rgb(71, 54, 54);">Reset</button>
         
         
     </div>
