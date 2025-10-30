@@ -60,12 +60,13 @@ if (document.location.pathname.endsWith("index.html") ||document.location.pathna
 if (document.location.pathname.endsWith("customize.html")){
     document.getElementById("timerIntervel").textContent = interval/1000 + " seconds.";
     document.getElementById("timerIncrement").textContent = increment + " seconds.";
-    document.getElementById("timerStop").textContent = stopAt + " seconds.";
+    stopAt = 0
     function submitIntervel(){
         let timerInterval = document.getElementById("T-intervel").value;
         console.log(typeof timerInterval);
         if (timerInterval.trim() != ""){
             interval = timerInterval * 1000
+            console.log(interval);
             document.getElementById("T-intervel").value="";
             document.getElementById("timerIntervel").textContent = interval/1000 + " seconds.";
         } 
@@ -78,6 +79,7 @@ if (document.location.pathname.endsWith("customize.html")){
 
         if (timerIncrement.trim() != ""){
             increment = Number(timerIncrement)
+            console.log(increment)
             document.getElementById("T-increment").value="";
             document.getElementById("timerIncrement").textContent = increment + " seconds.";
         } 
@@ -85,26 +87,7 @@ if (document.location.pathname.endsWith("customize.html")){
             alert("Please enter something!");
         }           
     } 
-    function submitStop(){
-        let timerStop = document.getElementById("T-stop").value;
-        console.log("input "+ timerStop);
-        console.log("original "+stopAt);
-        if (timerStop.trim() != ""){
-            timerStop = timerStop/60;
-            let min = Math.floor(timerStop);
-            let sec = Math.abs(min-timerStop);
-
-            console.log("cal min "+min)
-            console.log("cal sec "+sec)
-            increment = Number(timerStop)
-            console.log(increment)
-            document.getElementById("T-increment").value="";
-            document.getElementById("timerIncrement").textContent = increment + " seconds.";
-        } 
-        else{
-            alert("Please enter something!");
-        }  
-    }   
+  
 
 }
 
