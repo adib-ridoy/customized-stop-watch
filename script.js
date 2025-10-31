@@ -13,9 +13,6 @@ function updateTimer(){
     let hour = minutes < 10 ? "0" + hours : hours;
     document.getElementById("stop-watch-timer").innerHTML = `${hour}:${min}:${sec}`;
 }
-window.onload = function(){
-    updateTimer()
-}
 
 
 function start(){
@@ -55,7 +52,7 @@ function reset(){
 }
 
 
-if (document.location.pathname.endsWith("index.html") ||document.location.pathname.endsWith("customize.html")){
+if (document.location.pathname.endsWith("index.html") || document.location.pathname.endsWith("customize.html") || document.location.pathname.endsWith("/") ){
     updateTimer();
 }
 
@@ -100,4 +97,5 @@ if (document.location.pathname.endsWith("customize.html")){
 
 
 document.getElementById("ModifiedTime").textContent = document.lastModified;
+
 
